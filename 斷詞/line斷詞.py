@@ -1,7 +1,16 @@
 import jieba
 from collections import Counter
 import json
+import os
 
+
+original_files=os.listdir('./這裡改成斷詞前的資料夾名稱')
+for i in original_files:
+    raw='./這裡改成斷詞前的資料夾名稱//'+i
+    with open("data.txt","a+",encoding="utf-8") as f:
+        with open(raw,"r",encoding="utf-8")as p:
+            for line in p.readlines():
+                f.write(line+'\n')
 all_words = []
 jieba.set_dictionary('dict.txt.big')
 stopword_set = set()
