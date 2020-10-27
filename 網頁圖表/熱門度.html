@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>熱門度</title>
+        <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.gammel.js"></script>
+        <script type="text/javascript">
+        const dataSource = {
+  chart: {
+    caption: "top10熱門討論產品",
+    xaxisname: "產品",
+    yaxisname: "討論數",
+    numbersuffix: "次",
+    theme: "gammel"
+  },
+  data: [
+    {
+      label: "iphone12",
+      value: "623"
+    },
+    {
+      label: "iphone12 pro",
+      value: "578"
+    },
+    {
+      label: "airpods pro",
+      value: "453"
+    },
+    {
+      label: "Asus ROG Phone3",
+      value: "346"
+    },
+    {
+      label: "Galaxy s21",
+      value: "319"
+    },
+    {
+      label: "realme Xt",
+      value: "258"
+    },
+    {
+      label: "Xperia pro",
+      value: "231"
+    },
+    {
+      label: "藍芽耳機",
+      value: "164"
+    },
+    {
+      label: "小米手環5",
+      value: "129"
+    },
+    {
+      label: "nest audio",
+      value: "124"
+    }
+  ]
+};
+FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "column2d",
+    renderAt: "熱門度",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource
+  }).render();
+});
+        </script>
+    </head>
+    <body>
+        <div id="熱門度"></div>
+    </body>
+</html>
