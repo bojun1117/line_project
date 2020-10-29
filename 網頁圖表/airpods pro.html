@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>airpods pro_熱門度</title>
+        <title>airpods pro</title>
         <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
         <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
         <script type="text/javascript">
@@ -39,19 +39,40 @@
       seriesname: "討論度(次)",
       data: [
         {
-          value: "0"
+          value: "18"
         },
         {
-          value: "8"
+          value: "54"
         },
         {
-          value: "36"
+          value: "110"
         },
         {
           value: "214"
         },
         {
           value: "592"
+        }
+      ]
+    },
+    {
+      seriesname: "成長率(%)",
+      renderas: "line",
+      data: [
+        {
+          value: "0"
+        },
+        {
+          value: "200"
+        },
+        {
+          value: "103"
+        },
+        {
+          value: "94"
+        },
+        {
+          value: "176"
         }
       ]
     }
@@ -61,16 +82,16 @@
 FusionCharts.ready(function() {
   var myChart = new FusionCharts({
     type: "scrollcombi2d",
-    renderAt: "airpods pro_熱門度",
+    renderAt: "airpods pro",
     width: "100%",
     height: "100%",
     dataFormat: "json",
-    dataSource
+    dataSource: dataSource
   }).render();
 });
         </script>
     </head>
     <body>
-        <div id="airpods pro_熱門度"></div>
+        <div id="airpods pro"></div>
     </body>
 </html>
